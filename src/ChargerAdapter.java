@@ -6,7 +6,7 @@ public class ChargerAdapter extends Charger220 {
     }
 
     public int getVoltage() {
-        System.out.println("Использовалось напряжение 380 в 220 вольт");
+        System.out.println("Изменилось напряжение из 380 в 220 вольт");
         charger.charge();
         return 220;
     }
