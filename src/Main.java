@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Voltage380 voltage380 = new Voltage380();
-        ChargerAdapter chargerAdapter = new ChargerAdapter(voltage380);
-        chargerAdapter.charge();
+        Charger220 charger220 = new Charger220();
+        ChargerAdapter chargerAdapter = new ChargerAdapter(charger220);
+        int voltage = chargerAdapter.getVoltage();
     }
 }

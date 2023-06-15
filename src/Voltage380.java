@@ -1,5 +1,3 @@
-public class Voltage380 {
-    public int provideVoltage() {
-        return 380;
-    }
+interface Voltage380 {
+    public int getVoltage();
 }

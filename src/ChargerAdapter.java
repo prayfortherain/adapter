@@ -1,14 +1,13 @@
 public class ChargerAdapter extends Charger220 {
-    private Voltage380 voltage380;
+    private Charger220 charger;
 
-    public ChargerAdapter(Voltage380 voltage380) {
-        this.voltage380 = voltage380;
+    public ChargerAdapter(Charger220 charger) {
+        this.charger = charger;
     }
 
-    @Override
-    public void charge() {
-        int voltage = voltage380.provideVoltage();
-        System.out.println("Используется напряжение " + voltage + " вольт");
-        super.charge();
+    public int getVoltage() {
+        System.out.println("Использовалось напряжение 380 в 220 вольт");
+        charger.charge();
+        return 220;
     }
 }
